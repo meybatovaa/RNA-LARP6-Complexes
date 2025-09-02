@@ -1,6 +1,16 @@
-parm coords.prmtop
-trajin npt.mdcrd
+#!/bin/bash
+# RMSF analysis using cpptraj
 
+PRMTOP=coords.prmtop"
+TRAJ=npt.mdcrd"
+OUTPUT=rmsf_rna_byres.dat"
+
+cat > cpptraj_input.in << EOF
+parm $PRMTOP
+trajin $TRAJ
 rms first @P
+atomicfluct out $OUTPUT byres @P
+EOF
 
-atomicfluct out rmsf_rna_byres.dat byres @P
+# Run cpptraj
+cpptraj -i cpptraj_input.in
