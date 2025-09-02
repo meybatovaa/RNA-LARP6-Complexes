@@ -1,0 +1,10 @@
+Minimization of water and RNA
+&cntrl
+  imin=1,maxcyc=10000,ncyc=2000,
+  ntb=1,cut=10,  
+  ntr=1, ntc = 2, ntf = 2,
+  restraintmask = ':1-176,188,199'
+  restraint_wt = 50,
+  ntpr=50,
+  ntx=1
+ /
