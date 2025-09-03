@@ -52,7 +52,7 @@ f95 DisconnectionDPS.f90 -o DisconnectionDPS
 - View in `gv tree.ps` or convert to PDF:
 
 ```bash
-- ps2pdf tree.ps
+ps2pdf tree.ps
 ```
 ---
 
