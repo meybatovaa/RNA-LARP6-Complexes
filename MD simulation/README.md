@@ -18,7 +18,7 @@ Contains all initial files for MD simulations:
   - `npt_restr.in` – NPT relaxation with restraints  
   - `nvt.in` – Production NVT MD  
 - **RNA sequences and preparation**:
-  - `rna_sequences.txt` – RNA sequences for WT and variants    
+  - `sequences` – RNA sequences for WT and variants    
 
 ### `scripts/`
 Contains scripts for simulation and analysis:
@@ -30,27 +30,40 @@ Contains scripts for simulation and analysis:
 
 ---
 
+## Working directory
+Work from /scratch/prj/roeder_lido_rna/KR_MD_runs ;  contains three subdirectories, one for each RNA construct:
+
+- `alpha1I/` – WT stem-loop RNA  
+- `alpha1III/` – Alternative collagen stem-loop RNA 
+- `alpha2I/` – Alternative collagen stem-loop RNA 
+
+Each subdirectory includes:  
+- The MD run script (`.sh`) for submission to the HPC  
+- Input files (`.in`) for minimization, equilibration, and production runs  
+- Coordinate and topology files (`.prmtop`, `.inpcrd`)  
+- RMS analysis scripts   
+
 ## Workflow
 
 1. **RNA Sequence and Structure Preparation**  
-   - RNA sequences are provided in `rna_sequences.txt`.  
-   - 2D secondary structures predicted using [RNAfold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi).  
-   - 3D structures generated using [RNAComposer](https://rnacomposer.cs.put.poznan.pl/) and saved as `.pdb`.  
+- RNA sequences are provided in `rna_sequences.txt`.  
+- 2D secondary structures predicted using [RNAfold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi).
+- 3D structures generated using [RNAComposer](https://rnacomposer.cs.put.poznan.pl/) and saved as `.pdb`.  
 
 2. **System Setup with tleap**  
-   - Load `.pdb` structures and solvate using OPC water model.  
-   - Add counterions (Cl⁻, K⁺) to neutralize the system 
-   - Generate AMBER topology (`coords.prmtop`) and coordinate (`coords.inpcrd`) files.  
+- Load `.pdb` structures and solvate using OPC water model.  
+- Add counterions (Cl⁻, K⁺) to neutralize the system 
+- Generate AMBER topology (`coords.prmtop`) and coordinate (`coords.inpcrd`) files.  
 
 3. **Molecular Dynamics Simulations**  
-   - Initial minimization (constrained and unconstrained)  
-   - Solvation equilibration (multi-step heating and relaxation)  
-   - NPT relaxation with and without restraints  
-   - Production MD in NVT ensemble (multiple repeats recommended)  
+- Initial minimization (constrained and unconstrained)  
+- Solvation equilibration (multi-step heating and relaxation)  
+- NPT relaxation with and without restraints  
+- Production MD in NVT ensemble (multiple repeats recommended)  
 
 4. **Post-Processing and Analysis**  
-   - RMSF calculations per residue to monitor structural stability and flexibility  
-   - Comparison of WT vs variant constructs  
+- RMSF calculations per residue to monitor structural stability and flexibility  
+- Comparison of WT vs variant constructs  
 
 ---
 
