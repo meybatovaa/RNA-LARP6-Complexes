@@ -1,0 +1,12 @@
+first -10740
+levels 35
+delta 2.0
+minima min.data
+ts ts.data
+connectmin 3487
+scalebar 5
+comment trval 3892 distance14_36.txt
+trval 4265 distance14_36.txt
+trvalscale 450 50
+trvalrange 12.0 37.0
+labelsize 6
