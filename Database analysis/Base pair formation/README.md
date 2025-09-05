@@ -33,8 +33,11 @@
 - Parses dot-bracket files to compute per-residue pairing states.
 - Distinguishes opening (, closing ), and unpaired . residues.
 - Output: aggregated counts for each residue position across all frames.
-3. `basepair_barplot.py`
-- Generates bar plots of base-pairing per residue.
+3. `annotate_stackings.py`
+- Extracts stacking interactions from RNA trajectories using Barnaba.
+- Dentifies base stacking interactions frame by frame.
+4. `plot.py`
+- Generates  plots of base-pairing per residue of 48nt WT and 32nt WT, B1, B2, M3
 
 
   
