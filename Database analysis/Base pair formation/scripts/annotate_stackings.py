@@ -7,9 +7,9 @@ Extracts stacking interactions from RNA trajectory using Barnaba.
 
 import barnaba as bb
 
-traj_file = "32nt_B2/mdcrd_file.mdcrd"
-top_file = "32nt_B2/B2.pdb"
-output_file = "trajectory_stackingsB2.txt"
+traj_file = "example.mdcrd"
+top_file = "example.pdb"
+output_file = "output.txt"
 
 stackings, pairings, res = bb.annotate(traj_file, topology=top_file)
 
