@@ -35,7 +35,6 @@ def plot_basepair_subplot(ax, sequence, opens, closes, unpaired, title=None, lab
                       fontsize=13, color='black', ha='left', va='bottom')
 
 def main():
-    # List of constructs: (name, dotbracket_file)
     constructs = [
         ("WT 32nt", "32nt_WT_dotbracket.txt"),
         ("B1", "32nt_B1_dotbracket.txt"),
@@ -56,11 +55,9 @@ def main():
         opens, closes, unpaired = count_dotbracket_states(dotbrackets)
         plot_basepair_subplot(ax, seq, opens, closes, unpaired, title=name, label=corner_labels[i])
 
-    # Remove extra subplot if fewer constructs than axes
     for j in range(len(constructs), len(axes)):
         fig.delaxes(axes[j])
-
-    # Legend
+        
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, loc='center left', bbox_to_anchor=(1.02,0.5), fontsize=12, frameon=False)
 
