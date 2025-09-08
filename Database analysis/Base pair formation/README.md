@@ -26,7 +26,7 @@
 ## Scripts
 
 1. `annotate_basepair.py`
-- Uses barnana to annotate RNA trajectory base-pairs.
+- Uses `barnana` to annotate RNA trajectory base-pairs.
 - Input a trajectory and topology ((All trajectory formats accepted by MDTRAJ (e.g. pdb, xtc, trr, dcd, binpos, netcdf, mdcrd, prmtop)).
 - Outpt: `trajectory_basepairs.txt` listing per-frame base-pair interactions.
 2. `dotbracket_parser.py`
