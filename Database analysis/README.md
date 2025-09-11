@@ -24,4 +24,6 @@ This folder contains scripts and data for analyzing RNA structural ensembles fro
 - Disconnectivity graphs visualize energy relationships between minima and transition states
 
 ## References 
-
+- Barnaba RNA Analysis Toolkit: [Barnaba GitHub](https://github.com/srnas/barnaba)  
+- MDTraj: [MDTraj Documentation](https://www.mdtraj.org/)  
+- DisconnectionDPS (Energy Landscape Analysis): Wales, D. J. et al., *J. Chem. Phys.*
