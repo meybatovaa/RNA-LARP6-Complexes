@@ -73,7 +73,7 @@ Each subdirectory includes:
 
 - **Software**
   - AMBER22 or higher (`pmemd.cuda`, `tleap`,`cpptraj` )  
-  - Python 3.x  
+  - Python 3.9
   - Python packages: `numpy`, `matplotlib`, `seaborn`  
 
 - **RNA Structure Preparation**
