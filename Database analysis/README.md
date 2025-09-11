@@ -24,6 +24,7 @@ This folder contains scripts and data for analyzing RNA structural ensembles fro
 - Disconnectivity graphs visualize energy relationships between minima and transition states
 
 ## References 
+- Röder, K., Joseph, J. A., Husic, B. E., & Wales, D. J. *Energy Landscapes for Proteins: From Single Funnels to Multifunctional Systems.* Adv. Theory Simul. 2, 1800175 (2019). [https://doi.org/10.1002/adts.201800175](https://doi.org/10.1002/adts.201800175) 
 - Barnaba RNA Analysis Toolkit: [Barnaba GitHub](https://github.com/srnas/barnaba)  
 - MDTraj: [MDTraj Documentation](https://www.mdtraj.org/)  
 - DisconnectionDPS (Energy Landscape Analysis): Wales, D. J. et al., *J. Chem. Phys.*
