@@ -24,39 +24,19 @@ This repository contains computational workflows and analysis scripts from my di
 
 ## Requirements
 
-- Python 3.9+ with libraries mdtraj, numpy, matplotlib, seaborn, scipy
+- Python 3.9+ (mdtraj, numpy, matplotlib, seaborn, scipy)
 - Barnaba
-- AMBER Tools (including CPPTRAJ)
-
-## References 
+- AMBER 22 (pmemd.cuda, tleap, CPPTRAJ)
+- [RNAfold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)  
+- [RNAComposer](https://rnacomposer.cs.put.poznan.pl/)  
 
 ## References
 
-1. **Röder, K., Joseph, J. A., Husic, B. E., & Wales, D. J. (2019).**  
-   *Energy Landscapes for Proteins: From Single Funnels to Multifunctional Systems.*  
-   Advanced Theory and Simulations, 2(4), 1800175.  
-   [https://doi.org/10.1002/adts.201800175](https://doi.org/10.1002/adts.201800175)
-
-2. **RNAfold web server**  
-   [http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)
-
-3. **RNAComposer**  
-   [https://rnacomposer.ibch.poznan.pl/](https://rnacomposer.ibch.poznan.pl/)
-
-4. **AMBER software suite**  
-   [http://ambermd.org/](http://ambermd.org/)
-
-5. **Barnaba**  
-   [https://github.com/srnas/barnaba](https://github.com/srnas/barnaba)
-
-6. **MDTraj**  
-   [https://www.mdtraj.org/](https://www.mdtraj.org/)
-
-7. **DisconnectionDPS**  
-   Wales, D. J. et al., *J. Chem. Phys.*, 20XX
-
-
-
-
-
+- Röder, K., Joseph, J. A., Husic, B. E., & Wales, D. J. *Energy Landscapes for Proteins: From Single Funnels to Multifunctional Systems.* Adv. Theory Simul. 2, 1800175 (2019). [https://doi.org/10.1002/adts.201800175](https://doi.org/10.1002/adts.201800175)  
+- AMBER Tutorials: [AmberTools MD Setup](https://ambermd.org/tutorials/)  
+- RNA Secondary Structure Prediction: [RNAfold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)  
+- RNA 3D Structure Modeling: [RNAComposer](https://rnacomposer.ibch.poznan.pl/)  
+- Barnaba RNA Analysis Toolkit: [Barnaba GitHub](https://github.com/srnas/barnaba)  
+- MDTraj: [MDTraj Documentation](https://www.mdtraj.org/)  
+- DisconnectionDPS (Energy Landscape Analysis): Wales, D. J. et al., *J. Chem. Phys.*
 
